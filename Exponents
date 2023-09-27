@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int power(int b, int p);
+
+int main()
+{
+
+	int x, y, r=1;
+
+	printf("Enter the base and its power to calculate the base raised to the power\n");
+	scanf("%d%d", &x, &y);
+
+	r = power(x, y);
+
+	printf("%d to the power of %d is %d\n", x, y, r);
+
+return 0;
+}
+
+int power(int b, int p){
+
+	int r;
+
+	if( p == 0){
+
+
+		return 1;
+	}
+
+else{
+
+r = b * power(b, p-1);
+
+}
+
+return r;
+
+}
