@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void guess(int N);
+
+int main()
+{
+    int N = 1000;
+  
+    guess(N);
+  
+    return 0;
+}
+
+void guess(int N) {
+
+    int num, y, x = 1;
+
+    num = rand() % N;
+  
+    printf("I have a number between 1 and %d\n", N);
+    printf("Can you guess my number?\nPlease type your first guess.\n");
+  
+	do{
+ 
+        scanf("%d", &y);
+  
+        if (y > num)
+  
+        {
+            printf("Too high. Try Again.\n");
+            x++;
+        }
+
+        else if (num > y)
+  
+        {
+            printf("Too low. Try again.\n");
+            x++;
+        }
+
+    } while (y != num);
+
+	if(x < 10){
+	printf("Either you know the secret or got lucky!\n");
+}
+	else if(x == 10){
+	printf("Ahah! You know the secret!\n");
+}
+	else{ 
+	printf("You should be able to do better!\n");
+}
+}
