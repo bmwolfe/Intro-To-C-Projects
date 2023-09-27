@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int gcd(int n, int s);
+
+int main()
+{
+
+	int num, num2;
+
+	printf("Input two numbers to find their greatest common divisor ");
+	scanf("%d %d", &num, &num2);
+
+	printf("The Greatest Common Divisor is is %d\n", gcd(num, num2));
+
+	return 0;
+}
+
+int gcd(int n, int s) {
+
+	int x, gcd;
+
+	while(s != 0){
+		x = s;
+		s = n % s;
+		n = x;
+}
+
+	
+	gcd = n;
+	
+
+	return gcd;
+}
