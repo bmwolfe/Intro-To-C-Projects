@@ -1,0 +1,43 @@
+#include <stdio.h>
+ 
+struct employee {
+   int id;
+   int age;
+   float salary;
+}employee[100];
+
+int main(int argc, char *argv[]) {
+
+	int i;
+	int x = 0;
+	float average = 0;
+
+	printf("Enter the number of employees: ");
+	scanf("%d", &x);
+
+	for(i=0;i<x;i++){
+
+		printf("\nEnter the employee's id: ");
+		scanf("%d", &employee[i].id);
+		printf("\nEnter the employee's age: ");
+		scanf("%d", &employee[i].age);
+		printf("\nEnter the employee's salary: ");
+		scanf("%f", &employee[i].salary);
+		}
+	
+	for(i=0;i<x;i++)
+		{
+
+		average = average + employee[i].salary;
+
+		printf("\nThe employee's id is %d", employee[i].id);
+		printf("\nThe employee's age is %d", employee[i].age);
+		printf("\nThe employee's salary is %.2f\n", employee[i].salary);
+		}
+
+	average = average / i;
+
+	printf("\n\nThe average salary of an employee is %.4f\n", average);
+
+   return 0;
+}
