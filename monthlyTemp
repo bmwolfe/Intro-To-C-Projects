@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+
+	float monthlyTemperatures[12];
+	int i, k;
+
+printf("Enter the monthly temperature of each month one at a time\n");
+
+	scanf("%f%f%f%f%f%f%f%f%f%f%f%f", &monthlyTemperatures[0], &monthlyTemperatures[1], &monthlyTemperatures[2], &monthlyTemperatures[3], &monthlyTemperatures[4], &monthlyTemperatures[5], &monthlyTemperatures[6], &monthlyTemperatures[7], &monthlyTemperatures[8], &monthlyTemperatures[9], &monthlyTemperatures[10], &monthlyTemperatures[11]);
+
+
+	for(i=0; i<12; ++i){
+		printf("The average temp in month %d was %.2f\n", i+1, monthlyTemperatures[i]);
+}
+
+}
