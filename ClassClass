@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Class {
+	char examp[50];
+	char prof[50];
+	char lesson[100];
+	int term;
+} aClass;
+
+int main()
+{
+
+	strcpy(aClass.examp, "Book One");
+	strcpy(aClass.prof, "Anyi Liu");
+	strcpy(aClass.lesson, "C Structures");
+	aClass.term = 1;
+
+	printf("aClass example : %s\n", aClass.examp);
+	printf("aClass professor : %s\n", aClass.prof);
+	printf("aClass lesson : %s\n", aClass.lesson);
+	printf("aClass term : %d\n", aClass.term);
+
+	return 0;
+
+}
