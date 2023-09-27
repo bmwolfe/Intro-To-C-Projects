@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+
+	int a[15], i, n;
+
+	for(i=0; i<15; ++i){
+
+		printf("Enter an array amount ");
+		scanf("%d", &n);
+		a[i] = n + 1;
+
+	}
+
+printf("\n");
+
+	for(i = 0; i < 15; ++i){
+
+printf("Term %d in the array is %d\n", i, a[i]);
+}
+
+}
