@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int integerPower(int b, int p);
+
+int main()
+{
+
+	int b, p;
+
+	printf("Input a base and then the power it is raised to\n");
+	scanf("%d %d", &b, &p);
+
+return 0;
+}
+
+
+	
+int integerPower(int b, int p)
+{
+
+		int re;
+		re = b;
+
+		while( p > 0 ) {
+			re = re * b;
+			--p;
+		}
+
+		return re;
+
+}
