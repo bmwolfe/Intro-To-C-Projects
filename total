@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main ()
+{
+	unsigned int x = 1;
+	unsigned int total = 0;
+	unsigned int y;
+
+	while ( x <= 10 ) {
+		y = x * x;
+		printf( "%d\n", y );
+		total += y;
+		++x;
+	}
+
+	printf( "Total is %d\n", total );
+}
+
+
+This program prints the values of y first which are 1 * 1 or 1, 2 * 2 or 4, 3 * 3 or 9, etc. 
+So it prints 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 or the values of y, and then it adds those 
+values all up into the total which is 385. 
