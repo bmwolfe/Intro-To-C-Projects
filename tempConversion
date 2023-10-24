@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <math.h>
+
+float toCelsius(float c);
+float toFahrenheit(float f);
+
+int main ()
+{
+	int i;
+	int j;
+
+	printf("Degrees\t\t Celsius to Fahrenheit (0C to 100C)\t Fahrenheit to Celsius (32F to 212F)\n");
+
+	for(i = 0; i <= 212; ++i){
+		
+	printf("%d\t\t %.2f\t\t\t\t\t %.2f\n", i, toFahrenheit(i), toCelsius(i));
+	
+
+
+	}
+
+}
+
+float toFahrenheit(float f){
+
+	float out1;
+
+	if(f <= 100){
+	out1 = (f * 9/5) + 32;
+
+	return out1;
+}
+	else{
+		return 00;
+}
+}
+
+float toCelsius(float c){
+
+	float out2;
+	if(c < 32){
+		return 00;
+	}
+	else if(c > 212){
+		return 00;
+	}
+
+	else{
+	out2 = ((c - 32) * 5/9);
+	
+	return out2;
+}
+
+}
