@@ -1,0 +1,39 @@
+int main ()
+{
+
+	int num;
+
+	for(num = 1; num <= 10000; num++){
+
+	printf("%d", isPrime(num));
+
+	}
+
+	return 0;
+
+}
+
+int isPrime(int n){
+
+	int i;
+	int x=1;
+
+	for(i = 2; i < sqrt(n) ; i++) {
+
+	if(n%i==0) {
+            x = 0;
+        }
+} 
+
+	if(x==1) {
+		printf("%d is prime\n", n);
+	}
+
+	else {
+		printf("%d is not prime\n", n);
+	}
+	return 0;
+}
+
+
+//I believe the performance improvement is due to the use of the math library, this library contain predefined functions and the computer is already aware of how they work so instead of making it calculate n - 1 which it needs to figure out, you take the sqrt(n) which it already knows how to do well due to the math library, this results in the computer calculating the prime numbers slightly quicker than in the previous code.
