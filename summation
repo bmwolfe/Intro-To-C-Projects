@@ -1,0 +1,30 @@
+#include <stdio.h> 
+
+int main ()
+{
+	unsigned int count = 0;
+	int term;
+	int sum;
+	int num;
+
+printf("Enter number of terms\n");
+scanf("%d", &num);
+
+while(count >= 0)
+	{
+if( count == num ){
+break; }
+
+printf ("Enter a term\n");
+scanf("%d", &term);
+     
+
+sum = sum + term;
+++count;
+
+}
+ 
+	printf("Sum of terms = %d\n", sum);
+
+  return 0;
+}
