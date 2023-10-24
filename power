@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int my_pow(int x, int y);
+
+int main(int argc, char *argv[]) {
+
+int result; int x; int y;
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
+
+	for(int z = 1; z <= 10; ++z){
+		}
+
+
+	result = pow(x, y);
+
+	printf("The cube of the value is %d\n", result);
+}
