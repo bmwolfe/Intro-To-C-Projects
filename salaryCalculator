@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main ()
+{
+	unsigned int x = 0;
+
+	float sale;
+	float gross;
+	float salary;
+	
+	while ( x >= 0 ) {
+	
+		printf( "Enter sales in dollars (-1 to end):" );
+		scanf( "%f", &sale );
+
+	if( sale == -1){
+		break;
+	}
+
+		gross = sale * .09;
+
+		salary = gross + 200.00;
+		
+		++x;
+
+		printf( "Salary is: $%f\n", salary );
+		
+
+	}
+}
