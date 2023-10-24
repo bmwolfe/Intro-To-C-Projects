@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int fibonacci(int n);
+
+int main ()
+{
+
+	int i;
+
+	printf("Enter the number of fibonnaci iterations\n");
+	scanf("%d", &i);
+
+	printf("The fibonacci iteration of %d is %d\n", i, fibonacci(i));
+}
+
+int fibonacci(int n){
+	
+	int fib;
+	int a;
+	int b;
+
+	if( n == 0 ){
+		return 0;
+	}
+
+	else if( n == 1 ){
+		return 1;
+	}
+	else{
+	
+	//a = n - 1;
+	//b = n - 2;
+	//fib = a + b;
+		return fibonacci(n-1) + fibonacci(n-2);
+	}
+}
