@@ -1,0 +1,71 @@
+#include <stdio.h>
+
+int main()
+{
+
+	unsigned int counta = 0;
+	unsigned int countb = 0;
+	unsigned int countc = 0;
+	unsigned int countd = 0;
+	unsigned int counte = 0;
+
+	puts("Enter product number.");
+	puts("Enter EOF to end input.");
+	int product;
+
+	while ((product = getchar()) !=EOF) {
+
+		switch (product) {
+
+			case '1':
+				++counta;
+				break;
+
+			case '2':
+				++countb;
+				break;
+
+			case '3':
+				++countc;
+				break;
+
+			case '4':
+				++countd;
+				break;
+
+			case '5':
+				++counte;
+				break;
+			
+			case '\n':
+			case '\t':
+			case ' ':
+				break;
+
+
+			default:
+				printf("%s", "Incorrect product number entered");
+				puts(" Enter a different product number");
+				break;
+
+			}
+		}
+
+	float salea = 2.98 * counta;
+	float saleb = 4.50 * countb;
+	float salec = 9.98 * countc;
+	float saled = 4.49 * countd;
+	float salee = 6.87 * counte;
+
+	puts("\nProduct Quantity Sales");
+	printf("Product1:  %U     %f\n", counta, salea);
+	printf("Product2:  %U     %f\n", countb, saleb);
+	printf("Product3:  %U     %f\n", countc, salec);
+	printf("Product4:  %U     %f\n", countd, saled);
+	printf("Product5:  %U     %f\n", counte, salee);
+
+	float total = salea + saleb + salec + saled + salee;
+
+	printf("\nThe total retail value of all products sold was: %f\n", total);
+
+	}
