@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int isEven(int x);
+
+int main ()
+{
+
+	int num = 0;
+
+	while( num != -1 ){
+
+	printf("Enter a number (-1 to end)\n");
+	scanf("%d", &num);
+
+	if(num == -1){
+		break;
+		}
+
+
+	printf("%d\n", isEven(num));
+	}
+}
+
+int isEven(int x){
+
+	int res;
+	int out;
+
+	res = x % 2;
+
+	if(res == 0){ 
+		out = 1;
+	}
+	else{
+		out = 0;
+	}
+
+return out;
+}
+	
