@@ -1,0 +1,78 @@
+#include <stdio.h>
+
+int main()
+{
+
+	int i;
+
+	for(i=1; i <= 12; i++){
+		printf("On the ");
+		
+
+	switch (i) {
+
+		case 12: printf("Twelfth"); break;
+			
+		case 11: printf("Eleventh"); break;
+			
+		case 10: printf("Tenth"); break;
+			
+		case 9: printf("Ninth"); break;
+			
+		case 8: printf("Eighth"); break;
+			
+		case 7: printf("Seventh"); break;
+			
+		case 6: printf("Sixth"); break;
+			
+		case 5: printf("Fifth"); break;
+			
+		case 4: printf("Fourth"); break;
+			
+		case 3: printf("Third"); break;
+			
+		case 2: printf("Second"); break;
+			
+		case 1: printf("First"); break;
+			
+}
+
+	 printf(" day of Christmas my true love sent to me\n");
+
+	
+	switch(i){
+		case 12:
+			printf("12 drummers drumming\n");
+		case 11:
+			printf("Eleven pipers piping\n");
+		case 10:
+			printf("Ten lords a leaping\n");
+		case 9:
+			printf("Nine ladies dancing\n");
+		case 8:
+			printf("Eight maids a milking\n");
+		case 7:
+			printf("Seven swans a swimming\n");
+		case 6:
+			printf("Six geese a laying\n");
+		case 5:
+			printf("Five golden rings\n");
+		case 4:
+			printf("Four calling birds\n");
+		case 3:
+			printf("Three french hens\n");
+		case 2:
+			printf("Two turtle doves\n");
+
+		if(i>1){ printf("And ");
+		}
+
+		case 1:
+			printf("A partridge in a pear tree\n");
+
+		}
+		printf("\n\n");
+		
+	}
+	return 0;
+}
