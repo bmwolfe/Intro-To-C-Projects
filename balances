@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main ()
+{
+	unsigned int x = 0;
+
+	int an;
+	float bb;
+	float tc;
+	float tC;
+	float cl;
+	float b;
+
+	while ( x >= 0 ) {
+	
+		printf( "Enter account number (-1 to end):" );
+		scanf( "%d", &an );
+
+	if( an == -1){
+		break;
+	}
+
+		printf( "Enter beginning balance:" );
+		scanf( "%f", &bb );
+		
+		printf( "Enter total charges:" );
+		scanf( "%f", &tc );
+
+		printf( "Enter total credits:" );
+		scanf( "%f", &tC );
+
+		printf( "Enter credit limit:" );
+		scanf( "%f", &cl );
+
+		++x;
+
+		printf( "Account: %d\n", an );
+		printf( "Credit Limit: %f\n", cl );
+		
+		b = bb + tc - tC;
+		printf( "Balance: %f\n", b );
+
+	if( b > cl ){
+		
+		printf( "Credit limit exceeded\n" );
+		}
+	}
+}
