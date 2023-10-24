@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+int main()
+{
+    int i, num, flag=1;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    for(i = 2; i < num-1 ; i++)
+    {
+        /*
+            when this condition becomes true,
+            it means that entered number is
+            divisible by a number between 2 and num-1.
+            So it can't be prime.
+        */
+        
+if(num%i==0)
+        {
+            flag = 0; // number is not prime
+        }
+    } //
+
+    if(flag==1)
+    {
+        printf("%d is prime\n", num);
+    }
+
+    else
+    {
+        printf("%d is not prime\n", num);
+    }
+
+    // signal to operating system everything works fine
+    return 0;
+}
