@@ -1,0 +1,37 @@
+#include <stdio.h> 
+
+int main ()
+{
+	unsigned int count = 0;
+	int term;
+	int num;
+	int smallest = 0;
+
+printf("Enter number of terms\n");
+scanf("%d", &num);
+
+while(count >= 0)
+	{
+
+ if( count == num ){
+break; }
+
+printf ("Enter a term\n");
+scanf("%d", &term);
+
+if( smallest == 0 ){
+	smallest = term;
+}
+
+else if( term < smallest ) {
+smallest = term;
+}
+
+++count;
+
+}
+
+	printf("Smallest term is = %d\n", smallest);
+
+  return 0;
+}
