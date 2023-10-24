@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main ()
+{
+
+float denom = 1;
+float frac = 4/denom;
+float pi;
+int iteration;
+
+pi = frac;
+
+	printf( "Enter number of iterations " );
+	scanf( "%d", &iteration );
+
+do {
+
+	denom = denom + 2;
+	frac = 4/denom;
+	pi = pi - frac;
+
+	iteration = iteration -1;
+
+	denom = denom + 2;
+	frac = 4/denom;
+	pi = pi + frac;
+	
+	iteration = iteration -1;
+
+	printf( "pi is equal to %f\n", pi );
+
+
+
+
+}
+
+while( iteration > 0 ); {
+
+	}
+}
