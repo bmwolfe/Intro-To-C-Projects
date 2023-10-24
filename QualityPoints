@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int toQualityPoints(int p);
+
+int main()
+{
+
+	int a;
+
+	printf("Enter a students grades(-1 to end) ");
+	scanf("%d", &a);
+
+	printf("They received %d Quality Points\n\n", toQualityPoints(b));
+
+}
+
+int toQualityPoints(int p){
+
+	if(p >= 90 && p <= 100){
+		return 4;
+	}
+	
+	else if(p >= 80 && p <= 89){
+		return 3;
+	}
+
+	else if(p >= 70 && p <= 79){
+		return 2;
+	}
+
+	else if(p >= 60 && p <= 69){
+		return 1;
+	}
+
+	else{
+		return 0;
+	}
+}
