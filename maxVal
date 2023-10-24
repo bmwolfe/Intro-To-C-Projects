@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int max(int a, int b);
+
+int main()
+{
+	
+	int ret, a, b;
+
+	printf("Input two integers\n");
+	scanf( "%d %d", &a, &b);
+
+	ret = max(a, b);
+
+return 0;
+}
+
+
+
+int max(int a, int b)
+{
+
+	int result;
+
+		if (a > b) {
+			result = a;
+			printf("%d is larger than %d\n", a, b);
+		}
+
+		else if (b > a) {
+			result = b;
+			printf("%d is larger than %d\n", b, a);
+		}
+		
+		else {
+			printf("%d is equal to %d\n", a, b);
+		}
+	return result;
+	
+}
+
