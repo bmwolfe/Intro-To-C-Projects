@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int isMultiple (int x, int y);
+
+int main ()
+{
+	
+	int num1;
+	int num2;
+
+	printf("Enter two integers\n");
+	scanf("%d%d", &num1, &num2);
+	
+
+	printf("%d\n", isMultiple(num1, num2));
+}
+
+int isMultiple (int x, int y){
+
+	int num;
+	int out;
+
+	num = y % x;
+
+	if(num == 0 ){
+		out = 1;
+	}
+
+	else {
+		out = 0;
+	}
+
+	return out;
+
+}
