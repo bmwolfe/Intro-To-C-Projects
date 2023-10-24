@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+	int i, s;
+	int side;
+
+	printf("Enter length of side");
+	scanf("%d", &side);
+
+	for (i = 0; i < side; i++){
+		
+
+	for (s = 0; s < side; s++){
+		
+		printf("*");
+		}
+		printf("\n");
+		}
+
+}
