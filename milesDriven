@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main ()
+{
+	unsigned int x = 0;
+	
+	float total = 0;
+	float y;
+	float average;
+
+	float gallons;
+	float miles;
+
+	while ( x >= 0 ) {
+	
+		printf( "Enter the gallons used (-1 to end):" );
+		scanf( "%f", &gallons );
+
+	if( gallons == -1){
+		break;
+}
+
+		printf( "Enter the miles driven:" );
+		scanf( "%f", &miles );
+
+
+
+		y = miles / gallons;
+	
+		printf( "The miles/gallon for this tank was %f\n", y);
+		
+		total += y;
+		++x;
+		average = total / x;
+}
+
+	printf( "The overall average miles/gallon was %f\n", average );
+}
